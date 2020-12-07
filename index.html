@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
- 
     <title>Home Decor</title>
     <link rel="stylesheet" href= "css.css">
+    <script>
+        function displayDate() {
+            document.getElementById("showDate").innerHTML = Date();
+        }
+    </script>
 </head>
 <body>
     <style>
@@ -82,8 +86,14 @@
             <input type="reset">
         </td>
     </tr>
-
+    <tr>
+        <td colspan="2">
+        <button type="button" onclick="displayDate()">Show Date</button>
+        <p  id="showDate"></p>
+        </td>
+    </tr>
 </table>
+
 </form>
 </body>
 </html>
